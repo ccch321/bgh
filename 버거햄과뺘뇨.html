@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>편지</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f6f4ef; /* 종이톤 배경 */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #111;
+    }.container {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.icon {
+  font-size: 28px;
+  opacity: 0.6;
+  cursor: pointer;
+  user-select: none;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.letter, .ps {
+  background: #fff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.8;
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.ps {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 아이콘 -->
+    <div class="icons">
+      <div class="icon" onclick="toggleLetter()">✉️</div>
+      <div class="icon" onclick="togglePS()">📎</div>
+    </div><!-- 편지 본문 -->
+<div id="letter" class="letter">
+  안녕하세요 뺘뇨님 저의 최애트친님😍 분명 트리를 봤던거 같은데 못찾겟어서 걍 따로 적어놓아요... 이런 편지같은 글 현실친구한테도 안쓰는데 뺘뇨님이 넘 좋아서 안 쓰기가 좀 그렇네요? 부담스럽지 않으셨음 좋겟다......u///u🌲🤹‍♀️ <br />
+저는 ㅃ뇨님이랑 트친이라서 요즘 넘 행복해요 존망하루도 뺘뇨님이 있는 트위터보면 좀 괜찮아져요 안물어보셧지만 제가 지금까지 막 트친 엄청 사귀고 그러지 않았는데 첨 봣을때 앞으로쭉 만나고 싶단 생각이 들어서ㅎㅎ.. 새로 계정을 만들었어요... 그리고 그건 정말 잘한 선택이었던 거 같내요 그때 제가 용기를 안냇으면 계속 후회햇을 거예요 영원히 마비세계에서 친구창을 빤히 보고있었겠죠 후......🚬 트친 요청을 받아주셔서 정말 감사합니다!!!<br />
+저번에 같이 겜한 것도 넘 좋았어요 불러주셔서 넘 기뼜어요 친구들이랑 같이 노시는거 같았는데 제가 껴도되나 싶었고... 마이크도 없는 저에게 계속 말 걸어주시고 챙겨주셔서 너무 감사했어요 정말 좋은 기억으로 남앗어요...... 또 같이 게임해요🥹 저는 ㄹㅇ언제나 모든겜 환영🫡🫡<br />
+글고 평소에 제 트윗에 맘찍 해주시는 거나 멘션 달아주시는 거 보면 진짜 웃음이나요 말하시는 거 진짜 너무 웃기고 글에서 목소리가 들리는 느낌 어케 그리 귀엽고 재밌게 말할 수 있는 거죠 계속 짤 꺼내 오시는 것도 너우 사랑스러워요...<br />
+암튼 뺘뇨님을 알게 되어 즐거운 일이 많아졌단 것입니다~~ 하... 좀만 늦게 태어날걸 아 왜 뺘뇨랑 같은반 아니냐고!!!!!! 저는 뺘뇨님보다 정신연령이 낮으니까 편하게 대햬주셔야해요 정말혹시나 나이의 벽을 느끼실까봐... 그건 제발 안돼...😱☠️ 뭔가 할말이 엄청 많았는데 정리가 안되고 제가 말을 개못해가지고 끝내겟습니다 어차피 오래오래 볼거니깐... 마음을 전할 기회는많으니깐...😳 오늘 크리스마스인데 즐거운 하루 보내세요? 그리고 그다음날도 또 그다음날도 걍 매일매일 즐겁고 행복하시길🙏🙏 뺘뇨님은 그래야만 해 
+</div>
+
+<!-- 추신 -->
+<div id="ps" class="ps">
+  P.S. 사실 원래 이정도 분량이 아녔는데 뺘뇨님이 트리 꽤 길게 써주신 거를 먼저 봐버려가지고 수정햇어요.. 넘 많이쓰면 부담스럽겟지? 하고 간단하게 썼다가 괜찮구나~하고 줄줄썻네요..ㅎㅎ 근데 와덩이님한데 말하심 안돼요 길이가 너무 차이나서 좀 그래요 저는 와당이도 좋아하기때문에 물론뺘뇨도 개좋고 아시지요 엄마가 자식들을 공평하게사랑하는마음으로 
+</div>
+
+  </div>  <script>
+    function toggleLetter() {
+      const letter = document.getElementById('letter');
+      letter.style.display = (letter.style.display === 'none' || letter.style.display === '')
+        ? 'block'
+        : 'none';
+    }
+
+    function togglePS() {
+      const ps = document.getElementById('ps');
+      ps.style.display = (ps.style.display === 'none' || ps.style.display === '')
+        ? 'block'
+        : 'none';
+    }
+  </script></body>
+</html>
